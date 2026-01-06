@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data files (large files)
+*.csv
+*.xlsx
+*.parquet
+*.json
+data/processed/*
+data/raw/*
+output/*
+
+# Keep essential files
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!output/.gitkeep
+!data/raw/canon_character_list.txt
+
+# Logs
+*.log
+scraping_failures.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+temp/
+tmp/
+
+# Sample/test data (if you want to exclude)
+sample*.csv
+test_*.json

@@ -1,0 +1,53 @@
+onepiece-scraper/
+│
+├── src/
+│   ├── __init__.py                    # Package initialization
+│   └── onepiece_scraper.py            # Main scraper class (450+ lines)
+│
+├── data/
+│   ├── raw/                           # Raw input data
+│   │   ├── .gitkeep
+│   │   ├── canon_character_list.txt   # 1500+ character names
+│   │   └── all-characters-api.json    # API reference data
+│   └── processed/                     # Cleaned/processed datasets
+│       ├── .gitkeep
+│       ├── onepiece_cleaned_stage1.csv
+│       └── onepiecedataset.parquet    # 115MB processed data
+│
+├── output/
+│   ├── .gitkeep
+│   ├── characters_raw.json            # Main scraping output
+│   ├── scraping_failures.json         # Failed scrapes log
+│   └── progress/                      # Batch progress files
+│       └── batch_*.json               # 31 batch files
+│
+├── notebooks/
+│   └── data-prep.ipynb                # Data exploration & cleaning
+│
+├── _DELETE/                           # ⚠️ DEPRECATED - SAFE TO DELETE
+│   ├── README.md                      # Explanation of deprecated files
+│   ├── [9 test scripts]               # Debug/exploration scripts
+│   ├── [3 old scrapers]               # Previous versions
+│   └── [Unrelated data files]         # Other project files
+│
+├── .gitignore                         # Git exclusion rules
+├── config.py                          # Centralized configuration
+├── CONTRIBUTING.md                    # Contribution guidelines
+├── LICENSE                            # MIT License
+├── PROJECT_SUMMARY.md                 # This reorganization summary
+├── README.md                          # Main project documentation
+└── requirements.txt                   # Python dependencies
+
+Key Files:
+----------
+📄 src/onepiece_scraper.py    - Main scraper with dual methods (requests/Selenium)
+📊 output/characters_raw.json - 1500+ scraped characters
+📓 notebooks/data-prep.ipynb  - Data analysis & visualization
+📚 README.md                  - Comprehensive documentation
+
+Statistics:
+-----------
+✅ Production files: 8 core files
+🗑️  Deprecated files: 15+ in _DELETE/
+📦 Total data: ~120MB processed
+⚡ Code consolidation: 4 scripts → 1 clean class

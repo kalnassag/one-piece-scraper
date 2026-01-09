@@ -30,10 +30,6 @@ ENV/
 *.csv
 *.xlsx
 *.parquet
-*.json
-data/processed/*
-data/raw/*
-output/*
 
 # Keep essential files
 !data/raw/.gitkeep
@@ -49,6 +45,7 @@ scraping_failures.json
 .DS_Store
 Thumbs.db
 desktop.ini
+.claude
 
 # Temporary files
 *.tmp
